@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{useState}from 'react';
 import './App.css';
+import Form from './components/Form/Form'
+import Render from './components/Render/Render'
+import Img from './img/logo.png'
 
 function App() {
+  const [slide,setSlide]=useState(false)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='text'>
+        <p >Alumni Tapak Suci Mu'allimin</p>
+      </div>
+      <img src={Img} style={{height:100,width:70}} onClick={()=>setSlide(!slide)}/>
+     <div>
+       {!slide && <Form/>}
+       {slide && <Render/>}
+     </div>
     </div>
   );
 }

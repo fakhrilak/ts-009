@@ -1,0 +1,27 @@
+.form-group{
+    padding-top: 30px;
+}
+.form-group input{
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    border-top-color: #3399ff;
+    border-bottom-color: red;
+    border-left-color:#3399ff;
+    border-right-color: red;
+    border-width: 3px;
+    text-align: center;
+}
+.btn-Submit{
+    padding-top: 30px;
+}
+.btn-Submit button{
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    border-top-color: red;
+    border-bottom-color: red;
+    border-left-color:red;
+    border-right-color: red;
+    border-width: 3px;
+}
